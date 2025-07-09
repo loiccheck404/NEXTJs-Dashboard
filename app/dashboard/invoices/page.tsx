@@ -5,6 +5,11 @@ import { lusitana } from "@/app/ui/fonts";
 import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
 import { CreateInvoiceButton } from "@/app/ui/invoices/create-invoice-button";
 import { Suspense } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Invoices",
+};
 
 export default async function page(props: {
   searchParams?: Promise<{
